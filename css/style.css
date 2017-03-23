@@ -1,12 +1,67 @@
-.tunnel-support{
-    display:block;
-    position:relative;
-    margin:12.5% 25%;
-    height: 50vh;
-    width: 50vw;
-    border-top: 25px groove brown;
-    border-bottom: 25px groove brown;
-    border-left: 25px ridge beige;
-    border-right: 25px ridge beige;
+@keyframes zoomIn {
+    from {
+    visibility: visible;
+    opacity: 1;
+    margin:24.75% 49.5%;
+    height: 1vh;
+    width: 1vw;
+    border-top: 5px groove brown;
+    border-bottom: 5px ridge brown;
+    border-left: 5px ridge brown;
+    border-right: 5px groove brown;
     background: purple;
+    } to {
+    
+    margin:-5% -5%;       
+    height: 110vh;
+    width: 110vw;
+    border-top: 25px groove brown;
+    border-bottom: 25px ridge brown;
+    border-left: 25px ridge brown;
+    border-right: 25px groove brown;
+    background: purple;
+    }
+    
+}
+@keyframes zoomInInner {
+    from {
+    visibility: visible;
+    opacity: 1;
+    margin:24.75% 49.5%;
+    height: 1vh;
+    width: 1vw;
+    border-top: 5px groove brown;
+    border-bottom: 5px ridge brown;
+    border-left: 5px ridge brown;
+    border-right: 5px groove brown;
+    background: purple;
+    z-index:3;
+    } to {
+    
+    margin:-5% -5%;       
+    height: 110vh;
+    width: 110vw;
+    border-top: 25px groove brown;
+    border-bottom: 25px ridge brown;
+    border-left: 25px ridge brown;
+    border-right: 25px groove brown;
+    background: purple;
+    z-index:1;
+    }
+    
+}
+.tunnel-support-near{
+    animation: 3s 1.5s zoomIn infinite;
+    display:block;
+    position:absolute;
+}
+
+.tunnel-support{
+    animation: 3s 3s zoomIn infinite;
+    display:block;
+    position:absolute;
+}
+.tunnel-support-far {
+    position: absolute;
+    animation: 3s 4.5s zoomIn infinite;
 }

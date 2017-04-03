@@ -1,0 +1,50 @@
+@keyframes zoomIn {
+    from {
+
+    } to {
+
+    }
+    
+}
+@keyframes zoomInInner {
+    from {
+
+    } to {
+
+    }
+    
+}
+@keyframes zoomInInner {
+    from {
+
+    } to {
+
+    }
+    
+}
+* {
+    background:purple;
+}
+.tunnel-support {
+    position:absolute;
+    
+    
+}
+.light{
+    
+}
+.tunnel-support-near{
+    animation: 3s 1.5s zoomInInner infinite;
+    display:block;
+    position:absolute;
+}
+
+.tunnel-support{
+    animation: 3s 3s zoomIn infinite;
+    display:block;
+    position:absolute;
+}
+.tunnel-support-far {
+    position: absolute;
+    animation: 3s 4.5s zoomInOuter infinite;
+}
